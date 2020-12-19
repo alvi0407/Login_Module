@@ -1,0 +1,61 @@
+.App {
+  padding: 3rem 0;
+}
+
+.sign {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.sign:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-lg{
+  padding: 0.5rem 5% !important;
+}
+
+.rc-tabs {
+  border: none !important;
+}
+.rc-tabs-tab {
+  padding: 5px;
+  text-transform: capitalize;
+}
+.rc-tabs-tab .rc-tabs-tab-btn {
+  font-weight: normal;
+}
+
+.rc-tabs-nav-list {
+  text-align: center;
+}
+.rc-tabs-tab-btn {
+  padding: 0 2.5rem;
+}
+
+.rc-tabs-tab.rc-tabs-tab-active {
+  background: ececec;
+  color: #00a6f8;
+}
+.rc-tabs-ink-bar {
+  background: #59c7fd !important;
+}
+.rc-tabs-content-holder {
+  padding: 2.5rem;
+  background: #ececec;
+}
+/* .rc-tabs-content {
+} */
+
+.form-label {
+  width: 100%;
+  font-size: 1.15rem;
+  text-align: left;
+  padding-left: 0.7rem;
+}
+
+.login{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
