@@ -1,6 +1,15 @@
 /*
 For taking input from a guest user and saving it to table'guest'.
+
+functions used:
+addGuest()
+loginUser()
+validateForm()
+handleSubmit()
+
+
 */
+
 
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
@@ -55,11 +64,6 @@ export default function Guest({dataFromTabHeading}) {
     });
   }
 
-
-
-  const displayInfo=()=>{
-    console.log(name+age+gender+phone+email+password)
-  };
 
   function validateForm() {
     return( 

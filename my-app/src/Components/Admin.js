@@ -1,5 +1,13 @@
 /*
 For taking input from an admin user and saving it to table'admin'.
+
+functions used:
+addGuest()
+loginUser()
+validateForm()
+handleSubmit()
+
+
 */
 
 import React, { useState } from "react";

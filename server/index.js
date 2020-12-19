@@ -1,3 +1,6 @@
+/*
+Consists of the Nodebackend using express and mysql as database
+*/
 const express = require("express");
 const app = express();
 const mysql = require("mysql");
