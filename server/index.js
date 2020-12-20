@@ -64,13 +64,34 @@ app.post("/createadmin", (req, res) => {
 
 
 
-app.post('/login',(req,res)=>{
+app.post('/loginguest',(req,res)=>{
   const email = req.body.email;
   const password = req.body.password;
   const name = req.body.name;
 
   db.query(
     "SELECT * FROM guest WHERE email=? AND password=?",
+    [email, password],
+    (err, result) => {
+      if (err) {
+        res.send({err:err})
+      } 
+      if(result.length>0){
+        res.send(result);
+      }else{
+        res.send({message:"Wrong email/password!"});
+      }
+    }
+  );
+});
+
+app.post('/loginadmin',(req,res)=>{
+  const email = req.body.email;
+  const password = req.body.password;
+  const name = req.body.name;
+
+  db.query(
+    "SELECT * FROM admin WHERE email=? AND password=?",
     [email, password],
     (err, result) => {
       if (err) {

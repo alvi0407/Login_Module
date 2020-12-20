@@ -51,7 +51,7 @@ export default function Guest({dataFromTabHeading}) {
 
 
   const loginUser=()=>{
-    Axios.post("http://localhost:3001/login", {
+    Axios.post("http://localhost:3001/loginguest", {
       email: emaillogin,
       password: passwordlogin,
     }).then((response) => {

@@ -52,7 +52,7 @@ export default function Admin({dataFromTabHeading}) {
 
   
   const loginUser=()=>{
-    Axios.post("http://localhost:3001/login", {
+    Axios.post("http://localhost:3001/loginadmin", {
       email: emaillogin,
       password: passwordlogin,
     }).then((response) => {
